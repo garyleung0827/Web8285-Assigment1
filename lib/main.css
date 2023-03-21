@@ -1,0 +1,399 @@
+/* Name: Kin Man Leung
+Date: March 12, 2023
+Section: CST 8285 section 313
+Assignment: assigment 1
+File: main.css */
+
+/* general */
+html {
+    overflow: auto;
+}
+
+/* layout */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
+    background-color: #228a66;
+    min-width: 300px;
+}
+
+.content-wrap {
+    display: grid;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 110px;
+}
+
+.content-wrap>div {
+    margin: 20px 20px auto;
+    border: solid #006341;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #ffffff;
+    max-width: 800px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+object {
+    height: 13px;
+    padding-right: 5px;
+}
+
+/* resume icon */
+.icon {
+    padding-right: 10px;
+}
+
+.icon>img {
+    border-radius: 10pt;
+}
+
+/* intro style */
+#intro {
+    padding-right: 170px;
+    min-height: 200px;
+}
+
+#portrait {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#portrait>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* box style */
+div>h2,
+#contact-info>h1 {
+    border-bottom: solid 1px;
+    padding-bottom: 3px;
+}
+
+div>p {
+    font-size: 13pt;
+}
+
+p+ul {
+    margin-top: 5px;
+}
+
+
+/* course detail style */
+.course_outline {
+    padding-right: 300px;
+    min-height: 200px;
+}
+
+.course_outline>h2 {
+    padding: 5px;
+}
+
+.course_outline>ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+#course_code {
+    padding-top: 10px;
+}
+
+.course_outline>ul>li {
+    padding-bottom: 10px;
+}
+
+#course_img {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+
+}
+
+#course_img>img {
+    max-height: 100%;
+    height: 100%
+}
+
+#course_code {
+    font-weight: bold;
+}
+
+/* contact info */
+#contact-info>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+#contact-info>ul>li {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#contact-info>ul a {
+    color: black;
+}
+
+#contact-info>ul a:hover {
+    color: #228a66;
+}
+
+#objectives>p {
+    text-align: justify;
+}
+
+/* table */
+table {
+    background-color: #ffffff;
+    max-width: 900px;
+    border-collapse: collapse;
+
+    margin: 20px 20px auto;
+    border: solid #006341;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 866px;
+}
+
+thead>tr,
+tbody>tr {
+    border: solid 1px #333;
+}
+
+tr th {
+    font-size: 16px;
+}
+
+tr td,
+tr th {
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #dae8e3;
+}
+
+tbody tr:hover {
+    background-color: #8A2245 !important;
+    color: white;
+}
+
+table tr td:nth-child(3),
+table tr td:nth-child(4) {
+    text-align: center;
+}
+
+table tr td:first-child {
+    padding: 10px 0px 10px 5px;
+}
+
+table tr td:nth-child(2){
+    padding-right: 0px;
+}
+
+table tr td:nth-child(3),
+table tr td:nth-child(2) {
+    padding-left: 0px;
+}
+
+table object {
+    height: 20px;
+}
+
+table th:first-child {
+    padding: 0px!important;
+}
+
+table th:nth-child(2){
+    text-align: left;
+}
+
+/* filter pointer */
+#filter {
+    cursor: pointer;
+}
+
+tr>#filter {
+    display: inline-flex;
+    align-items: center;
+}
+
+#up,
+#down {
+    padding-left: 5px;
+}
+
+#down {
+    display: none;
+}
+
+/* button and search */
+.btn-group {
+    margin: 20px 16px auto !important;
+    border: 0 !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    background: none !important;
+    max-width: 860px !important;
+}
+
+button {
+    background-color: #175136;
+    border: 1px solid #175136;
+    margin: 5px;
+    color: white;
+    padding: 14px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    width: 110px;
+}
+
+button:hover {
+    background-color: #529F7B;
+}
+
+#search {
+    height: 44px;
+    font-size: 17px;
+    padding-left: 10px;
+    width: 94px;
+    margin: 5px;
+}
+
+/* style for width smaller than 610px */
+@media screen and (max-width: 610px) {
+
+    #portrait,
+    .icon {
+        display: none;
+    }
+
+    #intro,
+    .course_outline {
+        padding-right: 0px;
+        min-height: 200px;
+    }
+
+    table tr th:nth-child(5),
+    table tr td:nth-child(5) {
+        display: none;
+    }
+
+    /* course detail modify */
+    #course_detail>div>* {
+        background-color: #ffffffd5;
+    }
+
+    #course_img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    #course_img>img {
+        flex-grow: 1;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+    }
+
+    #course_detail {
+        background-color: #ffffff00;
+    }
+
+    .course_outline>ul>li {
+        padding-right: 10px;
+    }
+}
+
+/* header */
+header {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.topnav {
+    width: -webkit-fill-available;
+    max-width: 860px;
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #228a66;
+    color: white;
+}
+
+/* footer */
+.footer {
+    background-color: #333;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    padding-top: 10px;
+
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    font-size: smaller;
+    margin: 4px;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.footer a:hover {
+    color: grey;
+}

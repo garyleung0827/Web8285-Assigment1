@@ -1,0 +1,92 @@
+<!--
+Name: Kin Man Leung
+Date: March 12, 2023
+Section: CST 8285 section 313
+Assignment: assigment 1
+File: course.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Kin Man Leung">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses</title>
+  <link rel="stylesheet" type="text/css" href="lib/main.css">
+  <script src="lib/main.js" defer></script>
+  <!-- icon from https://fontawesome.com/ -->
+  <!-- course photo from brightspace.algonquincollege.com -->
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="courses.html" class="active">Courses</a>
+
+    </nav>
+
+  </header>
+
+  <!-- content -->
+  <div class="content-wrap">
+    <!-- button from selecting level and search -->
+    <div class="btn-group">
+      <input type="text" id="search" name="search" placeholder="Search">
+      <button id="alv">All Level</button>
+      <button id="lv1">Level One</button>
+      <button id="lv2">Level Two</button>
+    </div>
+
+    <!-- list courses -->
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th id="filter" data-sort="asc">Level<object id="up"
+              data="img/icon/arrow-up-solid.svg"></object><object id="down"
+              data="img/icon/arrow-down-solid.svg"></object></th>
+          <th>Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="course">
+        <!-- js table -->
+      </tbody>
+    </table>
+
+    <!-- selected course with detail and photo -->
+    <div class="row" id="course_detail">
+      <div class="course_outline">
+        <h2>Web Programming</h2>
+        <ul>
+          <li id="course_code">CST8285</li>
+          <li id="course_level">Level two</li>
+          <li id="course_des">Web programming using HTML, CSS, and JavaScript</li>
+        </ul>
+      </div>
+      <div id="course_img">
+        <img src="img/cst8285.jpeg" alt="course_photo" id="course_photo">
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer">
+      <p>Made by: Gary Leung</p>
+      <p>
+        Email:
+        <a href="leun0108@algonquinlive.com" target="_blank">leun0108@algonquinlive.com</a>
+      </p>
+      <p>Last Update: 2023-Feb-21</p>
+    </div>
+  </footer>
+</body>
+
+</html>
